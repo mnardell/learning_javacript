@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Varibles</title>
+</head>
+<body>
+<h1>Variables</h1>
+
+<script>
+//Write javascript between here..
+
+var aVariable = "hello I am a String";
+
+var yetAnotherVarible = 3.5;
+
+//Do we need the var for variable assigment to work
+
+itWorks = "Why do we need the var keyword?";
+
+//apparently not!
+
+alert (itWorks);
+
+/*If you're in the global scope then you do not need the var keyword.
+However: 
+If you're in a function then "var" will create a local variable,
+ "no var" will look up the scope chain until it finds the variable
+ or hits the global scope (at which point it will create it):
+
+*/
+
+function myFunction () {
+
+    itWorks = "Confusing!";
+}
+
+myFunction();
+alert (itWorks);
+
+// This is confusing ... I would argue, just use the var keyword as a habit to avoid conusion. 
+
+
+
+
+//..and here.
+</script> 
+</body>
+</html>
